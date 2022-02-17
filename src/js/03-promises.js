@@ -1,4 +1,4 @@
-
+import { Notify } from 'notiflix/build/notiflix-notify-aio';
 const formEl = document.querySelector(`.form`);
 let DELAY = null;
 let STEP = null;
@@ -17,7 +17,7 @@ const submitForm = (event) => {
   console.log("submitForm")
 
   for (let i = 1; i <= AMOUNT; i +=1) {
-    createPromise(i, DELAY).then(value => console.log(value)).catch(error => console.log(error));
+    createPromise(i, DELAY).then(value => Notify.success(value)).catch(error => Notify.failure(error));
     DELAY += STEP;
   };
 }
