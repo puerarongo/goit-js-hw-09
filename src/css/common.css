@@ -24,25 +24,13 @@ ul {
 
 button {
   border: none;
+  cursor: pointer;
   padding: 10px 20px 10px 20px;
 }
 
-button[data-start] {
+button:active {
+  background-color: #14729e;
   color: white;
-  background-color: rgb(19, 148, 223);
-}
-
-button[data-start]:active {
-  background-color: rgb(20, 167, 7);
-}
-
-button[data-stop]:active {
-  color: white;
-  background-color: rgb(139, 5, 5);
-}
-
-button[data-stop] {
-  background-color: rgb(230, 224, 224);
 }
 
 p {

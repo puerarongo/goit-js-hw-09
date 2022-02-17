@@ -35,7 +35,7 @@ const options = {
 // ? //
 
 buttonEl.setAttribute("disabled", "");
-const calendarFlatpickrEl = flatpickr(inputFlatpickrEl, options);
+flatpickr(inputFlatpickrEl, options);
 
 
 // todo function
@@ -52,6 +52,8 @@ const initTime = () => {
 };
 
 const activeButton = () => {
+  inputFlatpickrEl.setAttribute("disabled", "");
+  buttonEl.setAttribute("disabled", "");
   intervalId = setInterval(residualCount, 1000);
 };
 
