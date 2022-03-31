@@ -11,8 +11,6 @@ const colorize = () => {
     startEl.setAttribute("disabled", "");
     stopEl.removeAttribute("disabled");
 
-    condition = true;
-    console.log("!");
     intervalId = setInterval(() => {
         bodyEl.style.backgroundColor = getRandomHexColor()
     }, 1000);
